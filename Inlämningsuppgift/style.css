@@ -3,11 +3,14 @@ body {
   width: 100%;
 }
 .navbar {
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
 }
 .profil {
+  position: fixed;
+  top: 0;
+  right: 0;
   float: right;
   width: 100px;
 }
