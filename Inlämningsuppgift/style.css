@@ -1,0 +1,25 @@
+body {
+  background-image: url("362590076_3566627870280761_8307804950751158226_n.jpg");
+  width: 100%;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.profil {
+  float: right;
+  width: 100px;
+}
+.background {
+  width: 25%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Use the desired color and adjust opacity if needed  */
+}
+li {
+  margin: 5px;
+}
