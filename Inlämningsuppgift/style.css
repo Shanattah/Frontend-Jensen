@@ -2,10 +2,24 @@ body {
   background-image: url("362590076_3566627870280761_8307804950751158226_n.jpg");
   width: 100%;
 }
+:focus {
+  outline: 2px solid darkblue;
+}
 .navbar {
   position: relative;
   top: 0;
   left: 0;
+}
+.navbar a {
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: none; /* Remove underlines (if desired) */
+  color: #007bff; /* Change text color (blue in this example) */
+  padding: 5px 10px; /* Add padding for spacing (optional) */
+  border: 1px solid #007bff; /* Add a border (optional) */
+  border-radius: 4px; /* Add rounded corners (optional) */
+  display: inline-block; /* Make them inline-block to set width and height (optional) */
+  /* Add more styles as needed */
 }
 .profil {
   position: fixed;
@@ -14,19 +28,37 @@ body {
   float: right;
   width: 100px;
 }
-.background {
+.background,
+form {
   width: 25%;
   background-color: rgba(
     255,
     255,
     255,
-    0.4
+    0.5
   ); /* Use the desired color and adjust opacity if needed  */
+  padding: 10px;
+  gap: 10px;
 }
 li {
   margin: 5px;
 }
-h2 {
-  background-color: rgba(218, 233, 13, 0.4);
+h2,
+h1 {
+  background-color: rgba(218, 233, 13, 0.5);
   width: 25%;
 }
+/* .container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+.item1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.item2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.item3 {
+  grid-area: 1 / 3 / 2 / 4;
+} */

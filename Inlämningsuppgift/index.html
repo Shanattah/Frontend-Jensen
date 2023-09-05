@@ -7,57 +7,65 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Om mig</a></li>
-        <li><a href="guestbook.html">Gästbok</a></li>
-      </ul>
-    </nav>
-    <div>
-      <img class="profil" src="profil.jpg" alt="Bild på Magnus Tällgård" />
-      <h1>Magnus Tällgård</h1>
-    </div>
-    <div class="om-mig">
-      <p>
-        Hej mitt namn är Magnus och jag är 35 år. Jag är gift och har en dotter
-        som är 4 år.
-      </p>
-      <h2>Fritidsintressen</h2>
-      <div class="background">
-        <ul class="fritid-lista">
-          <li>Vara med familjen</li>
-          <li>Spela spel</li>
-          <li>Se på TV</li>
-        </ul>
-      </div>
-      <h2>Favoritmusik</h2>
-      <div class="background">
-        <ol>
-          <li>Iron Maiden</li>
-          <li>Sonata Arctica</li>
-          <li>ONE OK ROCK</li>
-          <li>Dio</li>
-        </ol>
-      </div>
-      <h2>Kompetenser</h2>
-      <div class="background">
-        <p>
-          Jag är en teknisk testare som har läst Java, JavaScript och Python
-        </p>
-        <p>Jag kan dessa tekniker</p>
+    <header>
+      <nav class="navbar">
         <ul>
-          <li>Cypress</li>
-          <li>Playwright</li>
-          <li>Postman</li>
-          <li>Selenium</li>
-          <li>K6</li>
-          <li>aXe</li>
-          <li>JUnit</li>
-          <li>Gherkin</li>
-          <li>MySQL</li>
-          <li>Git</li>
-          <li>Docker</li>
+          <li><a href="index.html">Om mig</a></li>
+          <li><a href="guestbook.html">Gästbok</a></li>
         </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div>
+        <img class="profil" src="profil.jpg" alt="Bild på Magnus Tällgård" />
+        <h1>Magnus Tällgård</h1>
+      </div>
+      <div class="om-mig">
+        <p>
+          Hej mitt namn är Magnus och jag är 35 år. Jag är gift och har en
+          dotter som är 4 år.
+        </p>
+        <section class="container">
+          <h2>Fritidsintressen</h2>
+          <div class="background item1">
+            <ul class="fritid-lista">
+              <li>Vara med familjen</li>
+              <li>Spela spel</li>
+              <li>Se på TV</li>
+            </ul>
+          </div>
+
+          <h2>Favoritmusik</h2>
+          <div class="background item2">
+            <ol>
+              <li>Iron Maiden</li>
+              <li>Sonata Arctica</li>
+              <li>ONE OK ROCK</li>
+              <li>Dio</li>
+            </ol>
+          </div>
+
+          <h2>Kompetenser</h2>
+          <div class="background item3">
+            <p>
+              Jag är en teknisk testare som har läst Java, JavaScript och Python
+            </p>
+            <p>Jag kan dessa tekniker</p>
+            <ul>
+              <li>Cypress</li>
+              <li>Playwright</li>
+              <li>Postman</li>
+              <li>Selenium</li>
+              <li>K6</li>
+              <li>aXe</li>
+              <li>JUnit</li>
+              <li>Gherkin</li>
+              <li>MySQL</li>
+              <li>Git</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   </body>
