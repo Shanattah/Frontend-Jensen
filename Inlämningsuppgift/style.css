@@ -43,14 +43,26 @@ form {
 li {
   margin: 5px;
 }
-h2,
+.kompetenser-bakgrund {
+  background-color: rgba(218, 233, 13, 0.5);
+  width: 140px;
+}
+.fritid-bakgrund {
+  background-color: rgba(218, 233, 13, 0.5);
+  width: 165px;
+}
+.favoritmusik-bakgrund {
+  background-color: rgba(218, 233, 13, 0.5);
+  width: 140px;
+}
+
 h1 {
   background-color: rgba(218, 233, 13, 0.5);
-  width: 25%;
+  width: 245px;
 }
 .container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
 }
 .item1 {
   grid-area: 1 / 1 / 2 / 2;
