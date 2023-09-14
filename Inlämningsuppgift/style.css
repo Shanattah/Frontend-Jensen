@@ -13,13 +13,12 @@ body {
 .navbar a {
   width: 25%;
   background-color: rgba(255, 255, 255, 0.5);
-  text-decoration: none; /* Remove underlines (if desired) */
-  color: #007bff; /* Change text color (blue in this example) */
-  padding: 5px 10px; /* Add padding for spacing (optional) */
-  border: 1px solid #007bff; /* Add a border (optional) */
-  border-radius: 4px; /* Add rounded corners (optional) */
-  display: inline-block; /* Make them inline-block to set width and height (optional) */
-  /* Add more styles as needed */
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  display: inline-block;
 }
 .profil {
   position: fixed;
@@ -31,12 +30,7 @@ body {
 .background,
 form {
   width: 25%;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Use the desired color and adjust opacity if needed  */
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   gap: 10px;
 }
