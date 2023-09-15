@@ -1,13 +1,18 @@
 body {
   background-image: url("362590076_3566627870280761_8307804950751158226_n.jpg");
-  /*   min-height: 500px;
- */
-  height: 100vh;
+  height: 99vh;
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  gap: 10px;
 }
 :focus {
   outline: 2px solid darkblue;
@@ -19,7 +24,7 @@ body {
 }
 .navbar a {
   width: 25%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   color: #007bff;
   padding: 5px 10px;
@@ -34,31 +39,29 @@ body {
   float: right;
   width: 100px;
 }
-.background,
-form {
-  width: 95px;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  gap: 10px;
-}
+
 li {
   margin: 5px;
 }
-.kompetenser-bakgrund {
-  background-color: rgba(218, 233, 13, 0.5);
-  width: 140px;
+.om-mig p {
+  padding: 5px;
+  width: 45%;
 }
-.fritid-bakgrund {
-  background-color: rgba(218, 233, 13, 0.5);
-  width: 165px;
+.item2 {
+  width: 160px;
 }
-.favoritmusik-bakgrund {
-  background-color: rgba(218, 233, 13, 0.5);
-  width: 140px;
+.item3 p {
+  margin: -8px;
+  width: auto;
+}
+.item1 {
+  width: 185px;
 }
 
+.fritid-lista {
+  margin-left: 10px;
+}
 h1 {
-  background-color: rgba(218, 233, 13, 0.5);
   width: 245px;
 }
 .container {
@@ -66,7 +69,12 @@ h1 {
   grid-template-columns: 20% 20% 20%;
   gap: 5%;
 }
-
+ul {
+  margin-left: -20px;
+}
+li {
+  margin-left: 15px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .container {
