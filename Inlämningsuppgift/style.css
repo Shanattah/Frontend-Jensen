@@ -47,15 +47,16 @@ li {
   padding: 5px;
   width: 45%;
 }
+/* Jag har använt px på horisontelt på item1 och item2 för att den ska bara täcka bokstäver och inte bli för stor. */
+.item1 {
+  width: 185px;
+}
 .item2 {
   width: 160px;
 }
 .item3 p {
   margin: -8px;
   width: auto;
-}
-.item1 {
-  width: 185px;
 }
 
 .fritid-lista {

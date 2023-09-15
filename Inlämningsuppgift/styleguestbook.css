@@ -1,3 +1,18 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navbar a {
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  display: inline-block;
+}
 form {
   max-width: 400px;
   margin: 0 auto;
