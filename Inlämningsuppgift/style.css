@@ -27,6 +27,7 @@ p {
   position: sticky;
   top: 0;
   background-color: lightblue;
+  justify-content: center;
 }
 .navbar ul {
   display: flex;
