@@ -1,6 +1,6 @@
 body {
   background-image: url("362590076_3566627870280761_8307804950751158226_n.jpg");
-  height: 99vh;
+  height: 90vh;
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,9 +22,8 @@ p {
   outline: 2px solid darkblue;
 }
 .navbar {
-  width: 100%;
-  height: 60px;
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0;
   background-color: lightblue;
 }
@@ -34,7 +33,7 @@ p {
   column-gap: 24px;
 }
 .navbar a {
-  width: 15vw;
+  width: 20vw;
   background-color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   color: #007bff;
@@ -56,7 +55,10 @@ li {
   margin: 5px;
 }
 .om-mig {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  margin-top: 75px;
 }
 
 /* Jag har använt px på horisontelt på item1 och item2 för att den ska bara täcka bokstäver och inte bli för stor. */
@@ -79,8 +81,7 @@ h1 {
 }
 .container {
   display: grid;
-  grid-template-columns: 10% 10% 20%;
-  gap: 5%;
+  justify-items: center;
 }
 ul {
   margin-left: -20px;
@@ -101,22 +102,22 @@ li {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
   .container {
-    grid-template-columns: 40% 40%;
+    grid-template-columns: auto auto;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 40% 40%;
+    grid-template-columns: auto auto;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .container {
-    grid-template-columns: 15% 15% 20%;
+    grid-template-columns: auto auto auto;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .profil {
     width: 65px;
   }
