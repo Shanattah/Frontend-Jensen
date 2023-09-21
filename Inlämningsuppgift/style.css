@@ -1,4 +1,5 @@
 body {
+  /* Jag har gjort en bakgrundsbild som är fixerad och statisk så att den ser hyffsad ut i alla upplösningar. Texten är vit och lite genomskinlig för att vara läslig på alla ställen och smälta in bättre mot bakgrunden. */
   background-image: url("362590076_3566627870280761_8307804950751158226_n.jpg");
   height: 90vh;
   background-size: 100%;
@@ -13,6 +14,7 @@ p {
   padding: 5px;
   width: 45%;
 }
+/* Jag har gjort en bakgrund till mina olika div och för att göra texten lättare att läsa. */
 .background {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
@@ -21,8 +23,9 @@ p {
 :focus {
   outline: 2px solid darkblue;
 }
+/* Min navbar har en bakgrund som är hela skärmen bredd. Den ska alltid vara längst upp på sidan. Listan är gjord som flexbox för att ligga bredvid varandra och det är centrerad på större storlekar och till vänster på mindre upplösningar. Anchor element är stylade. */
 .navbar {
-  width: 105vw;
+  width: 100vw;
   position: fixed;
   top: 0;
   background-color: lightblue;
@@ -42,6 +45,7 @@ p {
   display: inline-block;
   text-align: center;
 }
+/* Profil är en profilbild på mig som är fixerad på sidan längst upp till höger. Den döljs på sidan vid lägsta upplösningen */
 .profil {
   position: fixed;
   top: 0;
@@ -49,10 +53,7 @@ p {
   float: right;
   width: 100px;
 }
-
-li {
-  margin: 5px;
-}
+/* Margin-top för att den ska hamna nedanför min fixerade navbar. */
 .om-mig {
   display: grid;
   grid-template-columns: auto;
@@ -67,28 +68,29 @@ li {
 .item2 {
   width: 160px;
 }
+.item3 {
+  margin-top: 15px;
+}
+/* margin -8px för att det ska bli lite mer kompakt i grid-item */
 .item3 p {
   margin: -8px;
   width: auto;
 }
 
-.fritid-lista {
-  margin-left: 10px;
-}
-h1 {
-  width: 245px;
-}
 .container {
   display: grid;
   justify-items: center;
 }
+/* Margin-left för att listan ska komma lite längre in från kanten. */
 ul {
   margin-left: -20px;
+  justify-content: left;
+  column-gap: 24px;
 }
 li {
   margin-left: 15px;
 }
-
+/* Margin-top för att den ska hamna nedanför min fixerade navbar. Den är genomskinlig för att man ska kunna se bakgrundsbilden utan det ska bli svårt att läsa*/
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -96,11 +98,11 @@ form {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
   margin-top: 75px;
 }
 form p {
   font-weight: bold;
-  font-size: 16px;
 }
 .form-group {
   margin-bottom: 15px;
@@ -109,7 +111,6 @@ form p {
 label {
   display: block;
   font-weight: bold;
-  font-size: 16px;
 }
 .radio-label {
   display: inline-block;
@@ -125,7 +126,6 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  font-size: 16px;
 }
 
 button[type="submit"] {
@@ -142,9 +142,9 @@ button[type="submit"] {
   .container {
     grid-template-columns: auto;
   }
-  .navbar ul {
-    justify-content: left;
-    column-gap: 24px;
+
+  .item3 {
+    margin-top: 0px;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -152,19 +152,29 @@ button[type="submit"] {
   .container {
     grid-template-columns: auto auto;
   }
+  .item2 {
+    margin-right: 100%;
+  }
+  .item3 {
+    margin-left: 45%;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 40% 40%;
-    grid-template-rows: auto auto;
-    justify-content: center;
+    grid-template-columns: auto auto;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .container {
     grid-template-columns: auto auto auto;
+  }
+  .item2 {
+    margin-right: 0%;
+  }
+  .item3 {
+    margin-left: 0%;
   }
 }
 @media screen and (max-width: 540px) {
@@ -174,9 +184,9 @@ button[type="submit"] {
   .navbar a {
     width: 20vw;
   }
-  @media screen and (max-width: 338px) {
-    .profil {
-      display: none;
-    }
+}
+@media screen and (max-width: 338px) {
+  .profil {
+    display: none;
   }
 }
