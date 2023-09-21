@@ -156,7 +156,9 @@ button[type="submit"] {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto;
+    justify-content: center;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
