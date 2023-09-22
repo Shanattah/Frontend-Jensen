@@ -147,7 +147,8 @@ button[type="submit"] {
     margin-top: 0px;
   }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) 
+Jag har lagt margin-right 100% och margin-left 45% för att tvinga elementen att ligga bättre på sidan. Ett smartare sätt hade varit att använda position: relative och testa mig fram tror jag.*/
 @media screen and (min-width: 600px) {
   .container {
     grid-template-columns: auto auto;
@@ -165,7 +166,8 @@ button[type="submit"] {
     grid-template-columns: auto auto;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
+Här återställer jag margin från ovan så att det ser bra ut när det är 3 columner på större skärmar.*/
 @media screen and (min-width: 992px) {
   .container {
     grid-template-columns: auto auto auto;
@@ -177,6 +179,7 @@ button[type="submit"] {
     margin-left: 0%;
   }
 }
+/* Extra media-queries jag gjort för jag märkte att det såg konstigt ut vid dessa storlekar så jag har här gjort profilbilden mindre så den inte döljer saker och jag har gjort anchor i navbar mindre för att inte ta för mycket plats. */
 @media screen and (max-width: 540px) {
   .profil {
     width: 65px;
@@ -185,6 +188,7 @@ button[type="submit"] {
     width: 20vw;
   }
 }
+/* Här döljer jag profilbilden helt för att den inte ska dölja saker istället för att göra den ännu mindre */
 @media screen and (max-width: 338px) {
   .profil {
     display: none;
